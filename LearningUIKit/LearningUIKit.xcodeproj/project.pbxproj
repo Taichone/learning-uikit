@@ -16,6 +16,8 @@
 		5291EA9A2C47EACC0059498F /* LearningUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA992C47EACC0059498F /* LearningUIKitUITests.swift */; };
 		5291EA9C2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA9B2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift */; };
 		52FD29CE2C49F7280019F094 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29CD2C49F7280019F094 /* UIColors.swift */; };
+		52FD29D22C4A3BBF0019F094 /* DependencyViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29D12C4A3BBF0019F094 /* DependencyViewBuilder.swift */; };
+		52FD29D42C4A3C120019F094 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29D32C4A3C120019F094 /* DependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5291EA992C47EACC0059498F /* LearningUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUIKitUITests.swift; sourceTree = "<group>"; };
 		5291EA9B2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52FD29CD2C49F7280019F094 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
+		52FD29D12C4A3BBF0019F094 /* DependencyViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyViewBuilder.swift; sourceTree = "<group>"; };
+		52FD29D32C4A3C120019F094 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				5291EA782C47EACB0059498F /* AppDelegate.swift */,
 				5291EA7A2C47EACB0059498F /* SceneDelegate.swift */,
 				5291EA7C2C47EACB0059498F /* RootViewController.swift */,
+				52FD29D32C4A3C120019F094 /* DependencyContainer.swift */,
+				52FD29D12C4A3BBF0019F094 /* DependencyViewBuilder.swift */,
 				5291EA832C47EACC0059498F /* LaunchScreen.storyboard */,
 				5291EA862C47EACC0059498F /* Info.plist */,
 			);
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5291EA7D2C47EACB0059498F /* RootViewController.swift in Sources */,
+				52FD29D22C4A3BBF0019F094 /* DependencyViewBuilder.swift in Sources */,
 				52FD29CE2C49F7280019F094 /* UIColors.swift in Sources */,
 				5291EA792C47EACB0059498F /* AppDelegate.swift in Sources */,
+				52FD29D42C4A3C120019F094 /* DependencyContainer.swift in Sources */,
 				5291EA7B2C47EACB0059498F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
