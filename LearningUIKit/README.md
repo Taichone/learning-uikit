@@ -6,7 +6,7 @@
 - 全ての ViewModel は `BaseViewModel` に継承させる
 
 
-```
+```swift
 // BaseViewModel<HogeViewModel> を継承させて HogeViewModel を定義する
 // PrimitiveBaseViewModel<HogeViewModel> であり、かつ ViewModelType に準拠したもの
 typealias BaseViewModel<ViewModel: ViewModelType> = PrimitiveBaseViewModel<ViewModel> & ViewModelType
