@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
 
-        let viewController = DependencyViewBuilder.shared.root()
+        let viewController = DependencyViewBuilder.shared.articleList()
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
 

@@ -16,11 +16,20 @@ final class DependencyViewBuilder {
         self.container = container
     }
 
-    func root() -> UIViewController {
-        let viewController = RootViewController()
+    // MARK: viewModel を DI した UIViewController を返すメソッド
+
+    func articleList() -> UIViewController {
+        let viewController = ArticleListViewController()
+        let viewModel = ArticleListViewModel(
+            input: .init(),
+            state: .init(),
+            dependency: .init(
+                router: ArticleListRouter(moduleViewController: viewController),
+                articleStoreUseCase: container.articleStoreUseCase
+            )
+        )
+        viewController.viewModel = viewModel
+
         return viewController
     }
-
-    // MARK: viewModel を DI した UIViewController を返すメソッド
-    
 }
