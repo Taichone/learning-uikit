@@ -22,3 +22,22 @@ extension Article {
         case typeScript = "TypeScript"
     }
 }
+
+extension Article.Category: Comparable {
+    private var sortOrder: Int {
+        switch self {
+            case .swift: return 0
+            case .kotlin: return 1
+            case .python: return 2
+            case .typeScript: return 3
+        }
+    }
+
+    static func ==(lhs: Self, rhs: Self) -> Bool {
+        return lhs.sortOrder == rhs.sortOrder
+    }
+
+    static func <(lhs: Self, rhs: Self) -> Bool {
+       return lhs.sortOrder < rhs.sortOrder
+    }
+}

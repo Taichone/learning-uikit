@@ -59,13 +59,20 @@ final class ArticleListViewModel: BaseViewModel<ArticleListViewModel>, ArticleLi
                     .init(article: article)
                 }
                 
-                // セクションのキーを取得
-                let sectionKeys = articleListItems.map {
-                    $0.article.category.rawValue
-                }.unique()
+                let sortedArticleListItems = articleListItems.sorted {
+                    $0.article.category < $1.article.category
+                }
+                
+                let sectionKeys = {
+                    let categories = sortedArticleListItems.map {
+                        $0.article.category
+                    }.unique().sorted() // Array(Set(categories)) すると順序が変わるため
+                    
+                    return categories.map { $0.rawValue }
+                }()
                 
                 // グルーピング
-                let sectionedArticles = Dictionary(grouping: articleListItems) {
+                let sectionedArticles = Dictionary(grouping: sortedArticleListItems) {
                     $0.article.category.rawValue
                 }
                 
