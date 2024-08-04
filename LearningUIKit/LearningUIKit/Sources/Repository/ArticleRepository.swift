@@ -14,11 +14,11 @@ protocol ArticleRepositoryInterface {
 class ArticleRepository: ArticleRepositoryInterface {
     func fetchArticles() async throws -> [Article] {
         return [
-            Article(title: "Article1"),
-            Article(title: "Article2"),
-            Article(title: "Article3"),
-            Article(title: "Article4"),
-            Article(title: "Article5"),
+            .init(id: .init(rawValue: UUID().uuidString), title: "記事1", category: .swift),
+            .init(id: .init(rawValue: UUID().uuidString), title: "記事2", category: .kotlin),
+            .init(id: .init(rawValue: UUID().uuidString), title: "記事3", category: .swift),
+            .init(id: .init(rawValue: UUID().uuidString), title: "記事4", category: .python),
+            .init(id: .init(rawValue: UUID().uuidString), title: "記事5", category: .typeScript),
         ]
     }
 }

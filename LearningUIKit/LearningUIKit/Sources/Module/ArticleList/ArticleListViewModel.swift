@@ -16,13 +16,12 @@ protocol ArticleListViewModelInterface {
 final class ArticleListViewModel: BaseViewModel<ArticleListViewModel>, ArticleListViewModelInterface {
     struct Input: InputType {
         let viewDidAppear: PassthroughSubject<Void, Never> = .init()
-        // TODO: Input イベントを追加
         // let tappedGearButton: PassthroughSubject<Void, Never> = .init()
-        // let tappedArticle: PassthroughSubject<ArticleID, Never> = .init()
+         let tappedArticle: PassthroughSubject<ArticleID, Never> = .init()
     }
 
     struct Output: OutputType {
-        let articles: AnyPublisher<[Article], Never>
+        let articles: AnyPublisher<[(ArticleListSectionModel, [ArticleListItemModel])], Never>
         let loading: AnyPublisher<Bool, Never>
     }
 
@@ -55,6 +54,23 @@ final class ArticleListViewModel: BaseViewModel<ArticleListViewModel>, ArticleLi
         // TODO: 必要に応じてソートやグルーピングなども行う
         let articles = state.articles
             .receive(on: DispatchQueue.global(qos: .background))
+            .map { articles -> [(ArticleListSectionModel, [ArticleListItemModel])] in
+                let articleListItems = articles.map { article -> ArticleListItemModel in
+                    .init(article: article)
+                }
+                
+                let sectionKeys = articleListItems.map {
+                    $0.article.category.rawValue
+                }.unique()
+                
+                let sectionedArticles = Dictionary(grouping: articleListItems) {
+                    $0.article.category.rawValue
+                }
+                
+                return sectionKeys.map { sectionKey in
+                    (ArticleListSectionModel(title: sectionKey), sectionedArticles[sectionKey] ?? [])
+                }
+            }
             .eraseToAnyPublisher()
 
         return Output(

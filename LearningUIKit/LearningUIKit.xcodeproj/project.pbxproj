@@ -20,6 +20,7 @@
 		525057882C4F1C64000264ED /* ArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525057872C4F1C64000264ED /* ArticleDetailRouter.swift */; };
 		5250578A2C4F1C6E000264ED /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525057892C4F1C6E000264ED /* ArticleDetailViewController.swift */; };
 		5250578C2C4F1C78000264ED /* ArticleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250578B2C4F1C78000264ED /* ArticleDetailViewModel.swift */; };
+		5272368B2C5F195700F1AB5D /* ArticleID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272368A2C5F195700F1AB5D /* ArticleID.swift */; };
 		5291EA792C47EACB0059498F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA782C47EACB0059498F /* AppDelegate.swift */; };
 		5291EA7B2C47EACB0059498F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA7A2C47EACB0059498F /* SceneDelegate.swift */; };
 		5291EA822C47EACC0059498F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5291EA812C47EACC0059498F /* Assets.xcassets */; };
@@ -27,6 +28,13 @@
 		5291EA902C47EACC0059498F /* LearningUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA8F2C47EACC0059498F /* LearningUIKitTests.swift */; };
 		5291EA9A2C47EACC0059498F /* LearningUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA992C47EACC0059498F /* LearningUIKitUITests.swift */; };
 		5291EA9C2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291EA9B2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift */; };
+		52CD63F42C50DF31007CA736 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52CD63F32C50DF31007CA736 /* RswiftLibrary */; };
+		52CD63F82C50E261007CA736 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD63F72C50E261007CA736 /* SectionHeaderView.swift */; };
+		52CD63FA2C50E35B007CA736 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD63F92C50E35B007CA736 /* UIFontExtension.swift */; };
+		52CD64012C50E9B0007CA736 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52CD64002C50E9B0007CA736 /* RswiftLibrary */; };
+		52CD64032C50E9B0007CA736 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 52CD64022C50E9B0007CA736 /* rswift */; };
+		52CD64072C5108C7007CA736 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD64062C5108C7007CA736 /* ArticleTableViewCell.swift */; };
+		52CD64092C527B0D007CA736 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD64082C527B0D007CA736 /* ArrayExtension.swift */; };
 		52FD29CE2C49F7280019F094 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29CD2C49F7280019F094 /* UIColors.swift */; };
 		52FD29D22C4A3BBF0019F094 /* DependencyViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29D12C4A3BBF0019F094 /* DependencyViewBuilder.swift */; };
 		52FD29D42C4A3C120019F094 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD29D32C4A3C120019F094 /* DependencyContainer.swift */; };
@@ -65,6 +73,7 @@
 		525057872C4F1C64000264ED /* ArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailRouter.swift; sourceTree = "<group>"; };
 		525057892C4F1C6E000264ED /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		5250578B2C4F1C78000264ED /* ArticleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewModel.swift; sourceTree = "<group>"; };
+		5272368A2C5F195700F1AB5D /* ArticleID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleID.swift; sourceTree = "<group>"; };
 		5291EA752C47EACB0059498F /* LearningUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291EA782C47EACB0059498F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5291EA7A2C47EACB0059498F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +85,10 @@
 		5291EA952C47EACC0059498F /* LearningUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291EA992C47EACC0059498F /* LearningUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUIKitUITests.swift; sourceTree = "<group>"; };
 		5291EA9B2C47EACC0059498F /* LearningUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52CD63F72C50E261007CA736 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		52CD63F92C50E35B007CA736 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		52CD64062C5108C7007CA736 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		52CD64082C527B0D007CA736 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		52FD29CD2C49F7280019F094 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		52FD29D12C4A3BBF0019F094 /* DependencyViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyViewBuilder.swift; sourceTree = "<group>"; };
 		52FD29D32C4A3C120019F094 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
@@ -89,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CD63F42C50DF31007CA736 /* RswiftLibrary in Frameworks */,
+				52CD64032C50E9B0007CA736 /* rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CD64012C50E9B0007CA736 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				525057842C4E93C5000264ED /* PublisherExtension.swift */,
+				52CD63F92C50E35B007CA736 /* UIFontExtension.swift */,
+				52CD64082C527B0D007CA736 /* ArrayExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -147,6 +165,15 @@
 			path = ArticleDetail;
 			sourceTree = "<group>";
 		};
+		527236892C5F193F00F1AB5D /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				525057812C4E8474000264ED /* Article.swift */,
+				5272368A2C5F195700F1AB5D /* ArticleID.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
 		5291EA6C2C47EACB0059498F = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +181,7 @@
 				5291EA772C47EACB0059498F /* LearningUIKit */,
 				5291EA982C47EACC0059498F /* LearningUIKitUITests */,
 				5291EA762C47EACB0059498F /* Products */,
+				52CD63F02C50DF23007CA736 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +223,30 @@
 			path = LearningUIKitUITests;
 			sourceTree = "<group>";
 		};
+		52CD63F02C50DF23007CA736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CD63F52C50E23E007CA736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52CD63F62C50E240007CA736 /* TableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52CD63F62C50E240007CA736 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				52CD63F72C50E261007CA736 /* SectionHeaderView.swift */,
+				52CD64062C5108C7007CA736 /* ArticleTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		52FD29CC2C49F6CA0019F094 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				525057832C4E93A8000264ED /* Extension */,
+				52CD63F52C50E23E007CA736 /* View */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -250,7 +303,7 @@
 		52FD29DB2C4BD4890019F094 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				525057812C4E8474000264ED /* Article.swift */,
+				527236892C5F193F00F1AB5D /* Article */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -295,8 +348,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				52CD63FE2C50E8A3007CA736 /* PBXTargetDependency */,
 			);
 			name = LearningUIKit;
+			packageProductDependencies = (
+				52CD63F32C50DF31007CA736 /* RswiftLibrary */,
+				52CD64022C50E9B0007CA736 /* rswift */,
+			);
 			productName = LearningUIKit;
 			productReference = 5291EA752C47EACB0059498F /* LearningUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -315,6 +373,9 @@
 				5291EA8D2C47EACC0059498F /* PBXTargetDependency */,
 			);
 			name = LearningUIKitTests;
+			packageProductDependencies = (
+				52CD64002C50E9B0007CA736 /* RswiftLibrary */,
+			);
 			productName = LearningUIKitTests;
 			productReference = 5291EA8B2C47EACC0059498F /* LearningUIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -369,6 +430,9 @@
 				Base,
 			);
 			mainGroup = 5291EA6C2C47EACB0059498F;
+			packageReferences = (
+				52CD63EF2C50D552007CA736 /* XCRemoteSwiftPackageReference "R" */,
+			);
 			productRefGroup = 5291EA762C47EACB0059498F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -414,12 +478,17 @@
 				52FD29D22C4A3BBF0019F094 /* DependencyViewBuilder.swift in Sources */,
 				52FD29E02C4BE6150019F094 /* BaseRouter.swift in Sources */,
 				5250578A2C4F1C6E000264ED /* ArticleDetailViewController.swift in Sources */,
+				52CD64092C527B0D007CA736 /* ArrayExtension.swift in Sources */,
 				52FD29CE2C49F7280019F094 /* UIColors.swift in Sources */,
+				52CD63F82C50E261007CA736 /* SectionHeaderView.swift in Sources */,
+				5272368B2C5F195700F1AB5D /* ArticleID.swift in Sources */,
 				525057742C4E4BDD000264ED /* ArticleListRouter.swift in Sources */,
 				525057802C4E82F7000264ED /* ArticleRepository.swift in Sources */,
 				5250577A2C4E4C04000264ED /* SettingViewController.swift in Sources */,
 				5291EA792C47EACB0059498F /* AppDelegate.swift in Sources */,
+				52CD64072C5108C7007CA736 /* ArticleTableViewCell.swift in Sources */,
 				5250577D2C4E822C000264ED /* ArticleStoreUseCase.swift in Sources */,
+				52CD63FA2C50E35B007CA736 /* UIFontExtension.swift in Sources */,
 				525057852C4E93C5000264ED /* PublisherExtension.swift in Sources */,
 				52FD29E22C4BEA690019F094 /* BaseViewModel.swift in Sources */,
 				525057882C4F1C64000264ED /* ArticleDetailRouter.swift in Sources */,
@@ -463,6 +532,10 @@
 			isa = PBXTargetDependency;
 			target = 5291EA742C47EACB0059498F /* LearningUIKit */;
 			targetProxy = 5291EA962C47EACC0059498F /* PBXContainerItemProxy */;
+		};
+		52CD63FE2C50E8A3007CA736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 52CD63FD2C50E8A3007CA736 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -767,6 +840,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52CD63EF2C50D552007CA736 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52CD63F32C50DF31007CA736 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52CD63EF2C50D552007CA736 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		52CD63FD2C50E8A3007CA736 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		52CD64002C50E9B0007CA736 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52CD63EF2C50D552007CA736 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		52CD64022C50E9B0007CA736 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52CD63EF2C50D552007CA736 /* XCRemoteSwiftPackageReference "R" */;
+			productName = rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5291EA6D2C47EACB0059498F /* Project object */;
 }
