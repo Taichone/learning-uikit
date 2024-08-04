@@ -51,6 +51,7 @@ final class ArticleListViewController: UIViewController {
         self.title = "Article List"
         
         setTableView()
+        bind()
     }
     
     private func setTableView() {
@@ -73,9 +74,19 @@ final class ArticleListViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        
-        bind()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationItem.largeTitleDisplayMode = .always
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.input.viewDidAppear.send(())
+    }
+
     
     private func bind() {
         viewModel.output.articles

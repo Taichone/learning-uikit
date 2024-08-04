@@ -59,10 +59,12 @@ final class ArticleListViewModel: BaseViewModel<ArticleListViewModel>, ArticleLi
                     .init(article: article)
                 }
                 
+                // セクションのキーを取得
                 let sectionKeys = articleListItems.map {
                     $0.article.category.rawValue
                 }.unique()
                 
+                // グルーピング
                 let sectionedArticles = Dictionary(grouping: articleListItems) {
                     $0.article.category.rawValue
                 }
