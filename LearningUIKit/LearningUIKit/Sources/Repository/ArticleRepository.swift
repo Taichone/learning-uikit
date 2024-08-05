@@ -14,7 +14,7 @@ protocol ArticleRepositoryInterface {
 class ArticleRepository: ArticleRepositoryInterface {
     func fetchArticles() async throws -> [Article] {
         return [
-            .init(id: .init(rawValue: UUID().uuidString), title: "究極の Swift", category: .kotlin),
+            .init(id: .init(rawValue: UUID().uuidString), title: "究極の Swift", category: .swift),
             .init(id: .init(rawValue: UUID().uuidString), title: "Kotlin Multiplatform 入門", category: .kotlin),
             .init(id: .init(rawValue: UUID().uuidString), title: "Swift Concurrency と Combine", category: .swift),
             .init(id: .init(rawValue: UUID().uuidString), title: "FastAPI を試してみた", category: .python),
